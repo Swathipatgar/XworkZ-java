@@ -1,56 +1,13 @@
 class Laptop {
 
-    static boolean isSwitched;
-    int currentBrightness = 50;  
-    static int maxBrightness = 100;
-    static int minBrightness = 0;
-
-    static boolean onOrOff() {
-
-        if (!isSwitched) {   
-            isSwitched = true;
-            System.out.println("The Laptop is switched On...");
-        } else {
-            isSwitched = false;
-            System.out.println("The Laptop is switched Off...");
-        }
-
-        return isSwitched;
-    }
-
-    public void increaseBrightness() {
-
-        System.out.println("increaseBrightness is invoked...");
-
-        if (isSwitched) {
-
-            if (currentBrightness < maxBrightness) {
-                currentBrightness += 10;
-                System.out.println("Current Brightness: " + currentBrightness);
-            } else {
-                System.out.println("Maximum Brightness Reached...");
-            }
-
-        } else {
-            System.out.println("Please switch On the Laptop first...");
-        }
-    }
-
-    public void decreaseBrightness() {
-
-        System.out.println("decreaseBrightness is invoked...");
-
-        if (isSwitched) {
-
-            if (currentBrightness > minBrightness) {
-                currentBrightness -= 10;
-                System.out.println("Current Brightness: " + currentBrightness);
-            } else {
-                System.out.println("Minimum Brightness Reached...");
-            }
-
-        } else {
-            System.out.println("Please switch On the Laptop first...");
-        }
-    }
+    static double getPrice() { return 58990; }
+    static String getBrand() { return "HP"; }
+    static String getProcessor() { return "Intel i5 12th Gen"; }
+    static int getRAM() { return 16; }
+    static int getStorage() { return 512; }
+    static String getStorageType() { return "SSD"; }
+    static double getScreenSize() { return 15.6; }
+    static String getOperatingSystem() { return "Windows 11"; }
+    static int getWarrantyYears() { return 1; }
+    static boolean hasBacklitKeyboard() { return true; }
 }

@@ -1,55 +1,42 @@
 class Microwave {
 
-    static boolean isSwitched;
-    int currentTimer;           
-    static int maxTimer = 30; 
-
-    static boolean onOrOff() {
-
-        if (!isSwitched) {
-            isSwitched = true;
-            System.out.println("The Microwave is switched On...");
-        } else {
-            isSwitched = false;
-            System.out.println("The Microwave is switched Off...");
-        }
-
-        return isSwitched;
+    static double getPrice() {
+        return 11097.00;
     }
 
-    public void increaseTimer() {
-
-        System.out.println("increaseTimer is invoked...");
-
-        if (isSwitched) {
-
-            if (currentTimer < maxTimer) {
-                currentTimer++;
-                System.out.println("Current Timer is: " + currentTimer + " minutes");
-            } else {
-                System.out.println("Maximum Timer Reached...");
-            }
-
-        } else {
-            System.out.println("Please switch On the Microwave first...");
-        }
+    static String getBrand() {
+        return "Samsung";
     }
 
-    public void decreaseTimer() {
+    static int getSizeLiters() {
+        return 23;
+    }
 
-        System.out.println("decreaseTimer is invoked...");
+    static String getColour() {
+        return "Black";
+    }
 
-        if (isSwitched) {
+    static String getHeatingMethod() {
+        return "Convection";
+    }
 
-            if (currentTimer > 0) {
-                currentTimer--;
-                System.out.println("Current Timer is: " + currentTimer + " minutes");
-            } else {
-                System.out.println("Timer is already at Minimum...");
-            }
+    static String getFinishType() {
+        return "Colored Enamel";
+    }
 
-        } else {
-            System.out.println("Please switch On the Microwave first...");
-        }
+    static String getModelName() {
+        return "Samsung 23L Microwave";
+    }
+
+    static boolean isGrillSupported() {
+        return true;
+    }
+
+    static int getWarrantyYears() {
+        return 1;
+    }
+
+    static double getRating(){
+		return 4.4; 
     }
 }
