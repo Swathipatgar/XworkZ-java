@@ -1,6 +1,15 @@
 class IronBoxExecutor {
+
     public static void main(String[] args) {
-        boolean ref = IronBox.onOrOff();
-        System.out.println("The Iron Box is switched " + ref);
+
+        IronBox.onOrOff();   
+
+        IronBox iron = new IronBox();
+
+        iron.increaseHeat();
+        iron.increaseHeat();
+        iron.decreaseHeat();
+
+        IronBox.onOrOff();   
     }
 }

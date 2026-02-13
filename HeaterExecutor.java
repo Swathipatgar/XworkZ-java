@@ -1,6 +1,10 @@
 class HeaterExecutor {
+
     public static void main(String[] args) {
-        boolean ref = Heater.onOrOff();
-        System.out.println("The Heater is switched " + ref);
+
+        Heater.onOrOff();   // Turn ON
+
+
+        Heater.onOrOff();   // Turn OFF
     }
 }

@@ -1,6 +1,14 @@
 class LaptopExecutor {
+
     public static void main(String[] args) {
-        boolean ref = Laptop.onOrOff();
-        System.out.println("The Laptop is switched " + ref);
+
+        Laptop.onOrOff();   
+
+        Laptop lap = new Laptop();
+
+        lap.increaseBrightness();
+        lap.increaseBrightness();
+        lap.decreaseBrightness();
+        Laptop.onOrOff();   
     }
 }

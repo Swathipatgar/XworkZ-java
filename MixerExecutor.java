@@ -1,6 +1,18 @@
 class MixerExecutor {
+
     public static void main(String[] args) {
-        boolean ref = Mixer.onOrOff();
-        System.out.println("The Mixer is switched " + ref);
+
+        Mixer.onOrOff();   // Turn ON
+
+        Mixer mixer = new Mixer();
+
+        mixer.increaseSpeed();
+        mixer.increaseSpeed();
+        mixer.increaseSpeed();
+        mixer.increaseSpeed();  // Max check
+
+        mixer.decreaseSpeed();
+
+        Mixer.onOrOff();   // Turn OFF
     }
 }
