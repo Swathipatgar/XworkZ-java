@@ -1,37 +1,33 @@
-class WashingMachine {
-
+class Fan {
     static boolean isSwitched;
-    int currentSpeed;
-    static int maxSpeed = 5;
+    int currentSpeed;           // Fan speed level
+    static int maxSpeed = 5;    // Maximum speed
 
     static boolean onOrOff() {
-
-        if (!isSwitched) {
+        if (isSwitched == false) {
             isSwitched = true;
-            System.out.println("The Washing Machine is switched On...");
+            System.out.println("The Fan is switched On");
         } else {
             isSwitched = false;
-            System.out.println("The Washing Machine is switched Off...");
+            System.out.println("The Fan is switched Off");
         }
-
         return isSwitched;
     }
 
     public void increaseSpeed() {
-
         System.out.println("increaseSpeed is invoked...");
 
         if (isSwitched) {
 
             if (currentSpeed < maxSpeed) {
                 currentSpeed++;
-                System.out.println("Current Speed is: " + currentSpeed);
+                System.out.println("Current Speed: " + currentSpeed);
             } else {
                 System.out.println("Maximum Speed Reached...");
             }
 
         } else {
-            System.out.println("Please switch On the Washing Machine first...");
+            System.out.println("Please switch On the Fan first...");
         }
     }
 
@@ -43,13 +39,13 @@ class WashingMachine {
 
             if (currentSpeed > 0) {
                 currentSpeed--;
-                System.out.println("Current Speed is: " + currentSpeed);
+                System.out.println("Current Speed: " + currentSpeed);
             } else {
                 System.out.println("Speed is already at Minimum...");
             }
 
         } else {
-            System.out.println("Please switch On the Washing Machine first...");
+            System.out.println("Please switch On the Fan first...");
         }
     }
 }
