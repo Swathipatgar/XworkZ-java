@@ -1,6 +1,6 @@
 package com.xworkz.mallshops;
 
-public class HnmImpl implements Orion{
+public class AdidasImpl extends Orion {
     @Override
     public void doMarketing() {
 

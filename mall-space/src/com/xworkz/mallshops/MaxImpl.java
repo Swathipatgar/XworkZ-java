@@ -1,8 +1,8 @@
 package com.xworkz.mallshops;
 
-public class MaxImpl implements Orion{
+public class MaxImpl extends Orion{
     @Override
-    public void doMarketing() {
+    void doMarketing() {
         System.out.println("To collect Maxii drss");
     }
 }
